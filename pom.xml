@@ -8,7 +8,10 @@
     <artifactId>delta</artifactId>
     <packaging>pom</packaging>
     <version>0.0.1</version>
-    <name>delta</name>
+  <modules>
+    <module>mybatis-demo</module>
+  </modules>
+  <name>delta</name>
     <description>Delta Demo</description>
     <url>https://github.com/linfeng56/Delta</url>
 
