@@ -1,0 +1,13 @@
+*.md          text eol=lf
+*.sh          text eol=lf
+*.bat         text eol=crlf
+*.cs          text eol=crlf
+*.aspx        text eol=crlf
+*.Master      text eol=crlf
+*.asax        text eol=crlf
+*.config      text eol=crlf
+*.html        text eol=lf
+*.js          text eol=lf
+*.java        text eol=lf
+*.xml         text eol=lf
+*.properties  text eol=lf
