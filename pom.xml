@@ -10,6 +10,7 @@
     <version>0.0.1</version>
   <modules>
     <module>mybatis-demo</module>
+      <module>github-anno-interceptor-demo</module>
   </modules>
   <name>delta</name>
     <description>Delta Demo</description>
