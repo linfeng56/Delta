@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.github.delta.ln.mapper.ToysMarketMapper">
+
+    <insert id="insert" parameterType="com.github.delta.ln.pojo.ToysMarket">
+        insert into TOYS_MARKET(id, name) values(#{id}, #{name})
+    </insert>
+
+    <select id="getToysMarketById" resultType="com.github.delta.ln.pojo.ToysMarket">
+        select * from TOYS_MARKET
+    </select>
+
+</mapper>

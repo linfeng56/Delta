@@ -3,9 +3,13 @@
 
 <mapper namespace="com.github.delta.ln.mapper.PsyDuckMapper">
 
-    <select id="count" resultType="int">
-        select count(*)
-        from PSY_DUCK
+    <insert id="insert" parameterType="com.github.delta.ln.pojo.PsyDuck">
+        insert into PSY_DUCK(id, name, sex, age, remark, market_id)
+        values(#{id}, #{name}, #{sex}, #{age}, #{remark}, #{market_id})
+    </insert>
+
+    <select id="getPsyDuckById" resultType="com.github.delta.ln.pojo.PsyDuck">
+        select * from PSY_DUCK
     </select>
 
 </mapper>

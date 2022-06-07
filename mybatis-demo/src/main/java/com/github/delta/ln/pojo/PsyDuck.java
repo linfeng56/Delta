@@ -30,6 +30,11 @@ public class PsyDuck {
      */
     private String remark;
 
+    /**
+     * 市场ID，关联toys_market表id
+     */
+    private Integer marketId;
+
     public Integer getId() {
         return id;
     }
@@ -68,5 +73,25 @@ public class PsyDuck {
 
     public void setRemark(String remark) {
         this.remark = remark;
+    }
+
+    public Integer getMarketId() {
+        return marketId;
+    }
+
+    public void setMarketId(Integer marketId) {
+        this.marketId = marketId;
+    }
+
+    @Override
+    public String toString() {
+        return "PsyDuck{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", sex=" + sex +
+                ", age=" + age +
+                ", remark='" + remark + '\'' +
+                ", marketId=" + marketId +
+                '}';
     }
 }
