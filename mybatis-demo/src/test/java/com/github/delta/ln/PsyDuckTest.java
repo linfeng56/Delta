@@ -28,4 +28,16 @@ public class PsyDuckTest {
         int count = mapper.insert(duck);
         System.out.println(count);
     }
+
+    @Test
+    public void testSelectByExample(){
+        PsyDuck duck = new PsyDuck();
+//        duck.setId(1);
+        duck.setRemark("力量-5");
+        SqlSession sqlSession = MybatisUtil.getSqlSession();
+        PsyDuckMapper mapper = sqlSession.getMapper(PsyDuckMapper.class);
+
+        PsyDuck psyDuck = mapper.selectByExample(duck);
+        System.out.println(psyDuck);
+    }
 }

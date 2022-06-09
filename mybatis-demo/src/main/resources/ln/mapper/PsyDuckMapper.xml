@@ -5,11 +5,32 @@
 
     <insert id="insert" parameterType="com.github.delta.ln.pojo.PsyDuck">
         insert into PSY_DUCK(id, name, sex, age, remark, market_id)
-        values(#{id}, #{name}, #{sex}, #{age}, #{remark}, #{market_id})
+        values(#{id}, #{name}, #{sex}, #{age}, #{remark}, #{marketId})
     </insert>
 
     <select id="getPsyDuckById" resultType="com.github.delta.ln.pojo.PsyDuck">
         select * from PSY_DUCK
     </select>
 
+    <select id="selectByExample"
+            parameterType="com.github.delta.ln.pojo.PsyDuck" resultType="com.github.delta.ln.pojo.PsyDuck">
+        select * from PSY_DUCK
+        <where>
+            <if test="id != null">
+                id = #{id}
+            </if>
+            <if test="name != null and name != ''">
+                and name = #{name}
+            </if>
+            <if test="sex != null">
+                and sex = #{sex}
+            </if>
+            <if test="age != null">
+                and age = #{age}
+            </if>
+            <if test="remark != null and remark != ''">
+                and remark like CONCAT('%', #{remark}, '%')
+            </if>
+        </where>
+    </select>
 </mapper>

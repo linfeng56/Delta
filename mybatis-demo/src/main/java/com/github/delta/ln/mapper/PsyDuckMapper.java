@@ -11,4 +11,5 @@ public interface PsyDuckMapper {
 
   PsyDuck getPsyDuckById(Integer id);
 
+  PsyDuck selectByExample(PsyDuck duck);
 }
