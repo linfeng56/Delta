@@ -1,7 +1,7 @@
 package com.github.delta.test.cxw;
 
-import com.atguigu.mybatis.mapper.UserMapper;
-import com.atguigu.mybatis.pojo.User;
+import com.github.delta.cxw.mapper.UserMapper;
+import com.github.delta.cxw.pojo.User;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -48,10 +48,9 @@ public class MyBatisTest {
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
         //mapper.updateUser();
         //mapper.deleteUser();
-        /*User user = mapper.getUserById();
-        System.out.println(user);*/
+        User user = mapper.getUserById();
+        System.out.println(user);
         List<User> list = mapper.getAllUser();
-        list.forEach(user -> System.out.println(user));
 }
 
 }
