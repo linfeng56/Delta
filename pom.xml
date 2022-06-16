@@ -11,6 +11,7 @@
   <modules>
     <module>mybatis-demo</module>
       <module>github-anno-interceptor-demo</module>
+      <module>design-pattern-demo</module>
   </modules>
   <name>delta</name>
     <description>Delta Demo</description>
