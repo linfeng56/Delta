@@ -1,12 +1,12 @@
 package com.github.delta.cxw.mapper;
 
-
-
 import com.github.delta.cxw.pojo.User;
 
 import java.util.List;
 
-
+/**
+ * 用户dao类
+ */
 public interface UserMapper {
 
     /**
