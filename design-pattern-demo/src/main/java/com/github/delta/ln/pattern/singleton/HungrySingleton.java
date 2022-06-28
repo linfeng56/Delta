@@ -1,4 +1,4 @@
-package com.github.delta.pattern.singleton;
+package com.github.delta.ln.pattern.singleton;
 
 /**
  * 饿汉模式

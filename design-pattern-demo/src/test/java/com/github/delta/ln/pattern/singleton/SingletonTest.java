@@ -1,4 +1,4 @@
-package com.github.delta.pattern.singleton;
+package com.github.delta.ln.pattern.singleton;
 
 import org.junit.Test;
 
@@ -34,6 +34,22 @@ public class SingletonTest {
                 @Override
                 public void run() {
                     System.out.println(HungrySingleton.getInstance());
+                }
+            }).start();
+        }
+    }
+
+    /**
+     * 测试饿汉模式
+     */
+    @Test
+    public void testInnerClassSingleton(){
+        //多线程下，看看获取的实例是否是同一个
+        for (int i = 0; i < 10; i++) {
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    System.out.println(InnerClassSingleton.getInstance());
                 }
             }).start();
         }

@@ -1,4 +1,4 @@
-package com.github.delta.pattern.singleton;
+package com.github.delta.ln.pattern.singleton;
 
 /**
  * 内部类模式
@@ -6,7 +6,9 @@ package com.github.delta.pattern.singleton;
 public class InnerClassSingleton {
 
     private InnerClassSingleton() {
-
+        if(InnerClassSingletonHolder.instance != null){
+            throw new RuntimeException("单例模式不允许创建多次！");
+        }
     }
 
     public static InnerClassSingleton getInstance() {
