@@ -1,7 +1,7 @@
-package com.github.delta.ln.pattern.factory;
+package com.github.delta.ln.pattern.method;
 
-import com.github.delta.ln.pattern.factory.a.ConcreteProductFactoryA;
-import com.github.delta.ln.pattern.factory.b.ConcreteProductFactoryB;
+import com.github.delta.ln.pattern.method.a.ConcreteProductFactoryA;
+import com.github.delta.ln.pattern.method.b.ConcreteProductFactoryB;
 import org.junit.Test;
 
 /**

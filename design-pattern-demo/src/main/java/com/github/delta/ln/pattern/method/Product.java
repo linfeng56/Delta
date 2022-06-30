@@ -1,4 +1,4 @@
-package com.github.delta.ln.pattern.factory;
+package com.github.delta.ln.pattern.method;
 
 /**
  * 产品接口
