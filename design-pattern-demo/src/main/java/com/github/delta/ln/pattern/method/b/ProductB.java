@@ -1,6 +1,6 @@
-package com.github.delta.ln.pattern.factory.b;
+package com.github.delta.ln.pattern.method.b;
 
-import com.github.delta.ln.pattern.factory.Product;
+import com.github.delta.ln.pattern.method.Product;
 
 /**
  * 产品B

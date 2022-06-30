@@ -1,4 +1,4 @@
-package com.github.delta.ln.pattern.factory;
+package com.github.delta.ln.pattern.method;
 
 /**
  * 工厂方法模式
