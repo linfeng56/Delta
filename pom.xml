@@ -14,6 +14,7 @@
         <module>github-anno-interceptor-demo</module>
         <module>design-pattern-demo</module>
         <module>elastic-job-demo</module>
+        <module>java8-demo</module>
     </modules>
 
     <name>delta</name>
@@ -21,7 +22,7 @@
     <url>https://github.com/linfeng56/Delta</url>
 
     <properties>
-        <java.version>1.7</java.version>
+        <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 </project>
