@@ -15,7 +15,17 @@ public class LambadaTest {
     );
 
     @Test
-    public void test1() {
+    public void test_0() {
         employees.stream().filter((e) -> e.getAge() > 20).limit(1).forEach(System.out::println);
+    }
+
+
+    /**
+     * Consumer<T>： 消费型接口
+     *          void accept(T t);
+     */
+    @Test
+    public void test_1(){
+
     }
 }
